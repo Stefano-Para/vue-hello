@@ -4,11 +4,16 @@
     padding: 0;
 }
 
+button {
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+}
 #root {
     text-align: center;
-    margin: 20px;
 }
-
 .red {
     color: red;
 }
@@ -18,3 +23,28 @@
 .green {
     color: green;
 }
+
+/* head */
+#header {
+    border-bottom: 1px solid white;
+    background-color: lightblue;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* img  */
+#container_img {
+    height: calc(100vh - 87px);
+    background-color: orange;
+    padding-top: 10px;
+}
+#root img {
+    margin: 20px;
+    height: 500px;
+    width: 800px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px ;
+}
+

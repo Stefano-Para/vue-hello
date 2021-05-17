@@ -12,12 +12,19 @@
     <body>
 
         <div id="root">
+            
+            <div id="header">
+                <h1 :class="colorClass">{{ message }}</h1>
 
-            <h1 :class="colorClass">{{ message }}</h1>
+                <button @click="colorChange">Clicca qui per cambiare colore</button>   
+            </div>
+            
+            <div id="container_img">
+                <img :src="imgSrc" alt="immagine">
 
-            <br>
-
-            <button @click="colorChange">Clicca qui per cambiare colore</button>
+                <button @click="imgChange">{{ buttonText }}</button>
+            </div>
+            
 
         </div>
         
